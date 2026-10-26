@@ -7,10 +7,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
   <style>
     body {
-      background-color: #fdf6e3; /* 빛바랜 종이 배경 */
-      background-image: url('https://www.transparenttextures.com/patterns/notebook.png'); /* 수첩 질감 패턴 */
-      color: #2c3e50; /* 짙은 푸른빛의 잉크 색상 */
-      font-family: 'Nanum Pen Script', cursive;
+      background-color: #fdf6e3;
+      background-image: url('https://www.transparenttextures.com/patterns/notebook.png');
+      color: #2c3e50;
+      font-family: 'Nanum Pen Script', cursive; /* 전체 폰트 적용 */
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -21,15 +21,15 @@
     }
     .memo-container {
       background: rgba(255, 255, 255, 0.6);
-      border-left: 4px solid #d35400; /* 수첩의 붉은 가이드라인 느낌 */
+      border-left: 4px solid #d35400;
       padding: 30px 20px;
       max-width: 400px;
       box-shadow: 3px 5px 15px rgba(0,0,0,0.1);
-      transform: rotate(-2deg); /* 살짝 삐뚤어진 메모장 연출 */
+      transform: rotate(-2deg);
     }
     .coordinates {
-      font-family: monospace;
-      font-size: 1.1em;
+      /* font-family 설정 제거하여 전체 손글씨 폰트 상속 */
+      font-size: 1.6em; /* 폰트 특성에 맞춰 크기 확대 (기존 1.1em -> 1.6em) */
       color: #7f8c8d;
       text-align: right;
       margin-bottom: 25px;
